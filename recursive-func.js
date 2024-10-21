@@ -9,3 +9,10 @@ function sum(n) {
 console.log(sum(1)); // Expected output: 1
 console.log(sum(3)); // Expected output: 15 (1 + 2 + 3 + 4 + 5)
 console.log(sum(10)); // Expected output: 55 (1 + 2 + 3 + ... + 10)
+
+function reverseString(str) {
+    if (str === '') {
+        return '';
+    }
+    return reverseString(str.substr(1)) + str[0];
+}
